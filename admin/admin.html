@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Page</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 class="text-center mt-5 mb-5 ">
+                products
+            </h1>
+            <hr class="dashed ">
+        </div>
+
+        <div>
+            <h3 class="fs-4 mt-4 mb-5 text-center"> <i class="fa-solid fa-bookmark pe-2"></i>chocie your favorite
+                product<i class="fa-solid fa-bookmark ps-2"></i> </h3>
+        </div>
+
+        <div class="w-100 mx-auto text-capitalize py-5">
+            <div>
+                <label for="productid"><i class="fa-solid fa-pen pe-2"></i> Product Id:</label>
+                <input oninput="validateInput(this)" type="text" id="productid" placeholder="product id"
+                    class="form-control mt-1 mb-3">
+            </div>
+            <div>
+                <label for="productname"><i class="fa-solid fa-pen pe-2"></i> Product Name:</label>
+                <input oninput="validateInput(this)" type="text" id="productname" placeholder="product name"
+                    class="form-control mt-1 mb-3">
+                <div class="alert alert-danger d-none py-1 mt-2"><small>Product Name must start with an uppercase letter
+                        and be between 3 to 9 characters long</small></div>
+            </div>
+            <div>
+                <label for="productprice"><i class="fa-solid fa-dollar-sign pe-2"></i>Product Price:</label>
+                <input oninput="validateInput(this)" type="number" id="productprice" placeholder="product price"
+                    class="form-control mt-1 mb-3">
+                <div class="alert alert-danger d-none py-1 mt-2"><small>Product Price must be a positive number</small>
+                </div>
+            </div>
+            <div>
+                <label for="productcategory"><i class="fa-solid fa-bookmark pe-2"></i>Product Category:</label>
+                <input oninput="validateInput(this)" type="text" id="productcategory" list="category"
+                    placeholder="product category" class="form-control mt-1 mb-3">
+                <div class="alert alert-danger d-none py-1 mt-2"><small>Product Category must be one of the following:
+                        mobile, tv, watches, tap</small></div>
+                <datalist id="category">
+                    <option value="mobile">
+                    <option value="tv">
+                    <option value="tap">
+                    <option value="watches">
+                </datalist>
+            </div>
+            <div>
+                <label for="productdesc"><i class="fa-solid fa-link pe-2"></i>Product Description:</label>
+                <textarea oninput="validateInput(this)" type="text" id="productdesc" placeholder="product description"
+                    class="form-control mt-1 mb-3"></textarea>
+                <div class="alert alert-danger d-none py-1 mt-2"><small>Product Description must be at least 6
+                        characters long</small></div>
+            </div>
+            <div>
+                <label for="productimg"><i class="fa-solid fa-image pe-2"></i>Product Image:</label>
+                <input accept="image/*" type="file" id="productimg" class="form-control mt-1 mb-3">
+            </div>
+            <button id="addBtn" class="btn btn-warning rounded-5 px-5 d-block mx-auto" onclick="addProduct()">Add
+                Product</button>
+            <button id="updateBtn" class="btn btn-danger rounded-5 px-5 d-block mx-auto d-none"
+                onclick="updateProduct()">Update</button>
+            <hr class="dashed">
+        </div>
+
+
+
+
+        <div class="w-50 m-auto p-3">
+            <input oninput="searchProducts()" type="text" placeholder="search" class="form-control" name=""
+                id="searchInput">
+        </div>
+
+        <div class="container createdProducts">
+            <div id="rowData" class="row py-5">
+
+            </div>
+        </div>
+
+        <!-- //////////////////////////////////// Orders -->
+        <div class="title">
+            <h1 class="text-center mt-5 mb-5 ">
+                Orders
+            </h1>
+            <hr class="dashed ">
+
+            <h3 class="fs-4 mt-4 mb-5 text-center"> <i class="fa-solid fa-bookmark pe-2"></i>All Users Orders<i
+                    class="fa-solid fa-bookmark ps-2"></i> </h3>
+
+            <div class="orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User Id</th>
+                            <th>User Name</th>
+                            <th>Product Id</th>
+                            <th>Product</th>
+                            <th>Product Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tableBody">
+                        <!-- <tr>
+                            <td>fady</td>
+                            <td>fady@gmail.com</td>
+                            <td>#5</td>
+                            <td class="porduct">
+                                <img src="../imgs/prod.png" alt="">
+                                t-shirt
+                            </td>
+                            <td>12$</td>
+                            <td>
+                                <button class="btn btn-primary">Accept</button>
+                                <button class="btn btn-danger">Reject</button>
+                            </td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

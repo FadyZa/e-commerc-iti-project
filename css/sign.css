@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #07030b;
+}
+
+
+.backHome {
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.backHome:hover {
+    background-color: #0943f0;
+    color: #fff;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: #1a0b26;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    text-align: center;
+}
+
+.haveAcc {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.haveAcc {
+    text-align: center;
+}
+
+.haveAcc a {
+    color: #1a0b26;
+    transition: 0.3s ease-in;
+}
+
+.haveAcc a:hover {
+    color: #0943f0;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+
+.form input {
+    width: 100%;
+    padding: 15px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 18px;
+    transition: 0.5s ease-in;
+}
+
+.form input:focus {
+    border: 1px solid rgb(66, 66, 66);
+}
+
+.submit {
+    background-color: #1a0b26;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #0943f0;
+}
+
+.erorr {
+    color: red;
+    text-align: center;
+    display: none;
+}

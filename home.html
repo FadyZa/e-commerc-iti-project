@@ -1,0 +1,331 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"> -->
+  <!-- --------------Icon pack font-awesome----------- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>E-Commerce</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/pngegg.png" style="height: 60px" alt="logo-image" />
+        </div>
+        <nav>
+          <ul id="menu-items">
+            <li><a href="">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#offer">Offer</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a id="loginBtn" href="./loginPage/login.html">Log In <i class="fa-solid fa-right-to-bracket"></i></a>
+              <a id="logOutBtn" style="display: none;" href="#">Log Out<i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./cart/shoppingCart.html">
+          <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart-img" id="cart" />
+        </a>
+        <img src="images/menu.png" alt="menu" width="30px" height="30px" class="menu-icon" onclick="menutoggle()" />
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-white">
+            Great deals happening <br />
+            Right Now!
+          </h1>
+          <p>Enjoy a safe, convenient shopping experience</p>
+          <p>
+            Shop stress-free from home. We’re ready to help, online or by
+            phone.
+          </p>
+          <a href="#products" class="btn btn-main">Explore Now &#8594;</a>
+        </div>
+        <div class="col-md-6">
+          <img src="images/Alienware-laptop.png" alt="banner-image" class="center" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Latest products -->
+  <div class="small-container" id="products">
+    <h2 class="title">Latest Products</h2>
+    <div class="row" id="showData">
+
+
+      <!-- <div class="col-4 box-container" id="15">
+        <img src="images/canon-cam.jpg" alt="Camera">
+        <h5 class="product_name">Canon 12X Pro Shoot</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="price_name">L.E990</p>
+        <div>
+          <button type="button" class="btn cart-btn">
+            <i class="fa fa-shopping-cart"></i> Add To Cart
+          </button>
+        </div>
+      </div> -->
+
+
+
+    </div>
+  </div>
+  </div>
+
+  <!-- offer -->
+  <div class="offer" id="offer">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <img src="./images/exclusive.png" class="offer-img" alt="" />
+        </div>
+        <div class="col-2">
+          <p>Exclusively available on Our Store</p>
+          <h1>Smart Band 4</h1>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Excepturi rerum maiores eveniet minus ut deserunt vitae
+          </small>
+          <a href="" class="btn">Buy Now &#8594;</a>
+        </div>
+      </div>
+    </div>
+    <div class="small-container">
+      <div class="row">
+        <div class="col-6">
+          <img src="images/asus-banner.png" class="offer-img">
+        </div>
+
+        <div class="col-2">
+          <p>Top Prodcuts you should take it</p>
+          <h1>Best Product limitd offer!</h1>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Excepturi rerum maiores eveniet minus ut deserunt vitae
+          </small>
+          <a href="" class="btn">Buy Now &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div class="about" id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="">
+          <div class="about_box">
+            <h2>About Us</h2>
+            <span>Our Mobile Shop</span>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of It is a long established fact that a reader will be distracted by the
+              readable content of a page when looking at its layout. The point of It is a long established fact that a
+              reader will be distracted by the </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!------ Testimonial  ------>
+  <div class="testimonial">
+    <div class="small-container">
+      <h2>Client Reviews</h2>
+      <div class="row">
+
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, esse
+            quae ex sequi praesentium fuga voluptatem placeat voluptates odio
+            rerum.
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="./images/user-1.png" alt="" />
+          <h3>Sean Parker</h3>
+        </div>
+
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, esse
+            quae ex sequi praesentium fuga voluptatem placeat voluptates odio
+            rerum.
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="./images/user-2.png" alt="" />
+          <h3>Michel Joe</h3>
+        </div>
+
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, esse
+            quae ex sequi praesentium fuga voluptatem placeat voluptates odio
+            rerum.
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="./images/user-3.png" alt="" />
+          <h3>Kaily Jenner</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact -->
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="">
+        <div class="titlepage">
+          <h2>Contact us</h2>
+        </div>
+        <form class="main_form">
+          <div class="row">
+            <div class="">
+              <input class="form-control" placeholder="Your name" type="text" name="Your Name">
+            </div>
+
+            <div class="">
+              <input class="form-control" placeholder="Email" type="text" name="Email">
+            </div>
+            <div class=" ">
+              <input class="form-control" placeholder="Phone" type="text" name="Phone">
+            </div>
+            <div class="">
+              <textarea class="textarea" placeholder="Message"></textarea>
+            </div>
+            <div class=" ">
+              <button class="send">Send</button>
+            </div>
+          </div>
+          <div>
+            <h3>Contact us</h3>
+            <p>ADDRESS :Healing Center, 176 W Streetname,New York, NY 10014, US</p>
+            <p>MOBILE :(+71) 8522369417</p>
+            <p>E-MAIL :demo@gmail.com</p>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <!-- end contact -->
+  <!-- Brands -->
+
+  <div class="brands">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-5">
+          <img src="./images/logo-godrej.png" alt="" />
+        </div>
+        <div class="col-5">
+          <img src="./images/logo-oppo.png" alt="" />
+        </div>
+        <div class="col-5">
+          <img src="./images/logo-paypal.png" alt="" />
+        </div>
+        <div class="col-5">
+          <img src="./images/logo-philips.png" alt="" />
+        </div>
+        <div class="col-5">
+          <img src="images/amazon_PNG24.png" alt="" />
+        </div>
+        <div class="col-5">
+          <img src="images/samsung_logo_PNG2.png" alt="" />
+        </div>
+        <div class="col-5">
+          <img src="images/mastercard_PNG7.png" alt="" />
+        </div>
+        <div class="col-5">
+          <img src="images/paypal_PNG19.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer ================================================================== -->
+  <div id="footerSection">
+    <div class="container">
+      <div class="row">
+
+        <div class="span3">
+          <h5>ACCOUNT</h5>
+          <a href="login.html">YOUR ACCOUNT</a>
+          <a href="login.html">PERSONAL INFORMATION</a>
+          <a href="login.html">ADDRESSES</a>
+          <a href="login.html">DISCOUNT</a>
+          <a href="login.html">ORDER HISTORY</a>
+        </div>
+        <div class="span3">
+          <h5>INFORMATION</h5>
+          <a href="contact.html">CONTACT</a>
+          <a href="register.html">REGISTRATION</a>
+          <a href="legal_notice.html">LEGAL NOTICE</a>
+          <a href="tac.html">TERMS AND CONDITIONS</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="span3">
+          <h5>OUR OFFERS</h5>
+          <a href="#">NEW PRODUCTS</a>
+          <a href="#">TOP SELLERS</a>
+          <a href="special_offer.html">SPECIAL OFFERS</a>
+          <a href="#">MANUFACTURERS</a>
+          <a href="#">SUPPLIERS</a>
+        </div>
+        <div id="socialMedia" class="span3 pull-right">
+          <h5>SOCIAL MEDIA</h5>
+          <a href="https://www.facebook.com/"><img width="60" height="60" src="./images/facebook.png" title="facebook"
+              alt="facebook" /></a>
+          <a href="https://x.com/?lang=ar"><img width="60" height="60" src="./images/twitter.png" title="twitter"
+              alt="twitter" /></a>
+
+        </div>
+      </div>
+
+    </div>
+    <hr>
+    <p class="copyright">&copy; Copyright iti team 2024</p>
+    <!-- Container End -->
+  </div>
+
+
+  <script src="./main.js" type="module"></script>
+</body>
+
+</html>

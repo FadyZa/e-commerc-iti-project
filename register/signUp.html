@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <link rel="stylesheet" href="../css/sign.css">
+</head>
+
+<body>
+    <a class="backHome" href="../home.html">Back To Home Page</a>
+    <div class="formContainer">
+
+        <form class="form" id="signUpForm" action="../loginPage/login.html">
+            <p class="title">Register</p>
+            <p class="erorr">
+            </p>
+            <div>
+                <label for="userName">User Name</label>
+                <input type="text" name="userName" id="userName" class="userName">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="userName">
+            </div>
+            <div>
+                <label for="userPass">Password</label>
+                <input type="password" name="userPass" id="userPass" class="userPass">
+            </div>
+
+            <input type="submit" class="submit" value="Sign Up">
+
+            <p class="haveAcc">Already have an acount ? <a href="../loginPage/login.html">Signin</a> </p>
+        </form>
+    </div>
+
+
+    <script src="./signUp.js" type="module"></script>
+</body>
+
+</html>

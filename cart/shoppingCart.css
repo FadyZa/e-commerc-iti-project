@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    ;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #e9e8e8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    display: block;
+    font-size: 2em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+}
+
+h1 {
+    color: #000;
+}
+
+.cart-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 6px -6px rgba(104, 99, 99, 0.712);
+
+}
+
+.cart {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+.cart .image img {
+    max-width: 150px;
+}
+
+.cart .price {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart .price .prodPrice {
+    color: #5729ff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart .shipping {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.btns {
+    margin-top: 10px;
+}
+
+
+.btns button {
+    background-color: #ffffff00;
+    color: #5729ff;
+    padding: 7px 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: #5729ff 0.2em solid;
+    border-radius: 11px;
+    text-align: center;
+    transition: all 0.6s ease;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+.btns button i {
+    margin-right: 5px;
+}
+
+.btns button:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #5729ff;
+}
+
+
+
+.btns button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+
+.btns button svg {
+    transform: translateX(5px);
+}
+
+.status {
+    margin-top: 10px;
+    background-color: #e9e8e8;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.satus {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #8080FF;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* /////////////////////////////////// */
+
+aside {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+aside .total {
+    border-bottom: solid #999 2px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+
+aside button,
+.backHome {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+aside button {
+    background-color: #8080FF;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: .5s;
+    border-radius: 2px;
+}
+
+aside button:hover {
+    background-color: #5729ff;
+}
